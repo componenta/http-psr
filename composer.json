@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "componenta/config": "^2.0.2",
+        "componenta/config": "^3.0.0",
         "nyholm/psr7-server": "^1.1",
         "psr/container": "^2.0",
         "psr/http-message": "^2.0"
@@ -21,6 +21,17 @@
             "config-providers": [
                 "Componenta\\Http\\ConfigProvider"
             ]
+        },
+        "branch-alias": {
+            "dev-main": "1.1.x-dev"
         }
+    },
+    "require-dev": {
+        "componenta/di": "^5.0.0",
+        "nyholm/psr7": "^1.8",
+        "pestphp/pest": "^4.0"
+    },
+    "scripts": {
+        "test": "pest --bootstrap vendor/autoload.php tests"
     }
 }
