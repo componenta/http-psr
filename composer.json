@@ -32,7 +32,7 @@
         "pestphp/pest": "^4.0"
     },
     "scripts": {
-        "test": "pest --bootstrap vendor/autoload.php tests"
+        "test": "@php vendor/bin/pest"
     },
     "config": {
         "allow-plugins": {
